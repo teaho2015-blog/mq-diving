@@ -1,0 +1,7 @@
+server:
+  port: 22200
+spring:
+  profiles:
+    active: dev
+  application:
+    name: rocketmq-spring-demo
