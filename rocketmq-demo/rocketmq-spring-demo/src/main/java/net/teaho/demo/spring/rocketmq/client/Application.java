@@ -1,4 +1,4 @@
-package net.teaho.demo.spring.cloud.sentinel.core;
+package net.teaho.demo.spring.rocketmq.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

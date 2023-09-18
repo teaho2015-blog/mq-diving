@@ -1,4 +1,4 @@
-package net.teaho.demo.spring.cloud.sentinel.core.config;
+package net.teaho.demo.spring.rocketmq.client.config;
 
 import org.springframework.context.annotation.Configuration;
 
