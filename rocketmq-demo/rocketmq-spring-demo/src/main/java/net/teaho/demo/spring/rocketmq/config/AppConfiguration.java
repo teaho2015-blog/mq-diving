@@ -1,4 +1,4 @@
-package net.teaho.demo.spring.rocketmq.client.config;
+package net.teaho.demo.spring.rocketmq.config;
 
 import org.springframework.context.annotation.Configuration;
 

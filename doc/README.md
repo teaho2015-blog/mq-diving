@@ -1,4 +1,4 @@
-# Spring Learning [![][Badges: Github Issues Open]][Links: Github Issues open][![][Badges: Github Stars]][Links: Github Stars]
+# MQ Diving [![][Badges: Github Issues Open]][Links: Github Issues open][![][Badges: Github Stars]][Links: Github Stars]
 
 本文档主要关注点是MQ的原理及RocketMQ源码的学习输出。希望做到尽量简洁，严谨，简单。
 

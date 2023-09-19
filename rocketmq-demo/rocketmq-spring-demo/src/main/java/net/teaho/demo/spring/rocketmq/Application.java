@@ -1,4 +1,4 @@
-package net.teaho.demo.spring.rocketmq.client;
+package net.teaho.demo.spring.rocketmq;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

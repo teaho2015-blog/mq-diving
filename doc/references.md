@@ -6,6 +6,10 @@
 
 [3][SpringBoot整合RocketMQ，老鸟们都是这么玩的！ ](https://www.cnblogs.com/jianzh5/p/17301690.html)
 
+[4][RocketMQ 5.0 Arch & changelog|Apache RocketMQ Doc](https://rocketmq.apache.org/version)
+
+[5][RocketMQ-延迟消息](https://juejin.cn/post/6972043299565600798)
+
 https://juejin.cn/post/7168420095918604318#heading-7
 
 
