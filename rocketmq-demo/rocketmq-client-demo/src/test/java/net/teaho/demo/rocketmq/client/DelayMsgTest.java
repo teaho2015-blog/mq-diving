@@ -28,7 +28,7 @@ public class DelayMsgTest {
 
 
     @Test
-    public void testProductSimpleMsg() throws InterruptedException, MQClientException {
+    public void testProductDelayTimeMsg() throws InterruptedException, MQClientException {
 
         DefaultMQProducer producer = new DefaultMQProducer(config.getProducerGroup());
         producer.setNamesrvAddr(config.getDefaultNamesrvAddr());
@@ -56,13 +56,45 @@ public class DelayMsgTest {
         producer.shutdown();
     }
 
+    /**
+     * delay level msg
+     *
+     * @see  rocketmq-broker ScheduleMessageService and MessageStoreConfig.messageDelayLevel
+     */
+    @Test
+    public void testProductDelayLevelMsg() throws InterruptedException, MQClientException {
 
+        DefaultMQProducer producer = new DefaultMQProducer(config.getProducerGroup());
+        producer.setNamesrvAddr(config.getDefaultNamesrvAddr());
+        producer.start();
+
+        try {
+
+            Message msg = new Message(config.getTopic() /* Topic */,
+                config.getTag() /* Tag */,
+                ("Hello RocketMQ delay msg").getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
+            );
+            //delay 5s
+            msg.setDelayTimeLevel(2);
+
+            SendResult sendResult = producer.send(msg);
+
+            System.out.printf("%s%n", sendResult);
+        } catch (Exception e) {
+            e.printStackTrace();
+            Thread.sleep(1000);
+        }
+        /*
+         * Shut down once the producer instance is no longer in use.
+         */
+        producer.shutdown();
+    }
 
     /**
      * simple send
      */
     @Test
-    public void testConsumeSimpleMsg() throws InterruptedException, MQClientException {
+    public void testConsumeDelayMsg() throws InterruptedException, MQClientException {
 
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(config.getConsumerGroup());
 
@@ -107,4 +139,6 @@ public class DelayMsgTest {
         TimeUnit.SECONDS.sleep(30L);
         consumer.shutdown();
     }
+
+
 }
