@@ -146,6 +146,10 @@ public class RetryAndDeadlineMsgTest {
 
     /**
      * 消费死信队列
+     *
+     * 1. 代码消费死信队列
+     * 2. console可以resend
+     *
      * @throws InterruptedException
      * @throws MQClientException
      */
