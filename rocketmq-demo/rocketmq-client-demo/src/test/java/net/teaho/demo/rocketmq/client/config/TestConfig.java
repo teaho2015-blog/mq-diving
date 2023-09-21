@@ -11,10 +11,11 @@ public class TestConfig {
 
 
     private int messageCount = 100;
-    private String producerGroup = "please_rename_unique_group_name";
+    private String producerGroup = "test_producer_group";
     private String defaultNamesrvAddr = "127.0.0.1:9876";
     private String topic = "TopicTest";
     private String tag = "TagA";
-    private String consumerGroup = "please_rename_unique_group_name_4";
+    private String consumerGroup = "test_consumer_group";
+    private String DLQ_PREFIX = "%DLQ%";
 
 }

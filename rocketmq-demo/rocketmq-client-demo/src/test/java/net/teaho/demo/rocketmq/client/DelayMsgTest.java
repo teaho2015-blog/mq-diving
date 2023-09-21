@@ -42,6 +42,10 @@ public class DelayMsgTest {
             );
             //delay 5s
             msg.setDeliverTimeMs(System.currentTimeMillis() + 5_000L);
+            // This message will be delivered to consumer 5 seconds later.
+            //message.setDelayTimeSec(5);
+            // The effect is the same as the above
+            // message.setDelayTimeMs(5_000L);
 
             SendResult sendResult = producer.send(msg);
 
