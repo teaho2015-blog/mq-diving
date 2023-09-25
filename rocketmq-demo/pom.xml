@@ -18,6 +18,7 @@
     <modules>
         <module>rocketmq-spring-demo</module>
         <module>rocketmq-client-demo</module>
+        <module>rocketmq-client-java-demo</module>
     </modules>
 
     <properties>

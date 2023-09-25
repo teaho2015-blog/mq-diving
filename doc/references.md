@@ -10,6 +10,10 @@
 
 [5][RocketMQ-延迟消息](https://juejin.cn/post/6972043299565600798)
 
+[6][基于云基础设施快速部署 RocketMQ 5.0 集群|ApacheRocketMQ官方](https://juejin.cn/post/7185069619361611836)
+
+[7][[5.0] How RocketMQ Proxy Startup?|aliyun](https://developer.aliyun.com/article/1064632)
+
 https://juejin.cn/post/7168420095918604318#heading-7
 
 
