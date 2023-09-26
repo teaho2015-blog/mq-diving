@@ -14,6 +14,9 @@
 
 [7][[5.0] How RocketMQ Proxy Startup?|aliyun](https://developer.aliyun.com/article/1064632)
 
+[8][How to set docs as homepage for Docusaurus](https://ricard.dev/how-to-set-docs-as-homepage-for-docusaurus/)
+
+
 https://juejin.cn/post/7168420095918604318#heading-7
 
 
