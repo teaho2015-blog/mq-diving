@@ -27,3 +27,8 @@
 [Badges: Github Stars]: https://img.shields.io/github/stars/teaho2015-blog/mq-diving.svg?style=social&label=Star&maxAge=2592000
 [Links: Github Stars]: https://github.com/teaho2015-blog/mq-diving
 
+
+## reference
+
+[1][How to set docs as homepage for Docusaurus](https://ricard.dev/how-to-set-docs-as-homepage-for-docusaurus/)
+
