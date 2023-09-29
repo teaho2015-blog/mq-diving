@@ -1,5 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 12
+authors:
+- name: teaho
+  title: teaho2015@gmail.com
+  url: https://github.com/teaho2015
+  tags: [mq]
 ---
 
 # Translate your site

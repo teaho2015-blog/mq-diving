@@ -1,8 +1,10 @@
 package net.teaho.demo.rocketmq.javacli;
 
 import lombok.extern.slf4j.Slf4j;
-import net.teaho.demo.rocketmq.client.config.TestConfig;
-import org.apache.rocketmq.client.apis.*;
+import net.teaho.demo.rocketmq.javacli.config.TestConfig;
+import org.apache.rocketmq.client.apis.ClientConfiguration;
+import org.apache.rocketmq.client.apis.ClientException;
+import org.apache.rocketmq.client.apis.ClientServiceProvider;
 import org.apache.rocketmq.client.apis.consumer.*;
 import org.apache.rocketmq.client.apis.message.Message;
 import org.apache.rocketmq.client.apis.message.MessageId;
