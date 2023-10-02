@@ -18,4 +18,10 @@ authors:
 ## 架构
 
 
+## broker启动流程
+
+
+## namesrv启动流程
+
+
 ## 对比
