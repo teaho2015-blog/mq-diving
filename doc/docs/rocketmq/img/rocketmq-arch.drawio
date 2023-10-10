@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" modified="2023-10-10T12:42:57.553Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="Kz9tP1-KMW927vpwArWr" version="22.0.4" type="device">
+  <diagram name="Page-1" id="e3a06f82-3646-2815-327d-82caf3d4e204">
+    <mxGraphModel dx="3135.5" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" style=";html=1;" />
+        <mxCell id="1" style=";html=1;" parent="0" />
+        <mxCell id="6a7d8f32e03d9370-61" value="Name Server Cluster" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;fontSize=16;strokeColor=none;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="780" y="260" width="380" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;fontSize=16;" parent="1" source="6a7d8f32e03d9370-60" target="6a7d8f32e03d9370-58" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="718" y="570" />
+              <mxPoint x="718" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-23" value="接受消息、发送消息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" parent="9eP6y44NkABf_WAFRCNE-22" vertex="1" connectable="0">
+          <mxGeometry x="-0.1078" y="2" relative="1" as="geometry">
+            <mxPoint x="-20" y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.999;entryY=0.555;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="6a7d8f32e03d9370-60" target="6a7d8f32e03d9370-59" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="519" />
+              <mxPoint x="210" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6a7d8f32e03d9370-60" value="Proxy Cluster" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;fontSize=16;strokeColor=none;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="270" y="419" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6a7d8f32e03d9370-59" value="用户sdk Client" style="whiteSpace=wrap;html=1;fillColor=#EDEDED;fontSize=16;strokeColor=none;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="-150" y="419" width="360" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" parent="1" source="6a7d8f32e03d9370-58" target="6a7d8f32e03d9370-61" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-20" value="节点注册" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" parent="9eP6y44NkABf_WAFRCNE-18" vertex="1" connectable="0">
+          <mxGeometry x="-0.0245" relative="1" as="geometry">
+            <mxPoint x="-50" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6a7d8f32e03d9370-58" value="Broker" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;fontSize=16;strokeColor=none;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="797.5" y="559" width="345" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="6a7d8f32e03d9370-16" value="Broker1 slave" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;shape=mxgraph.citrix.chassis;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1005" y="600" width="88.31" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="6a7d8f32e03d9370-62" value="RocketMQ系统架构" style="text;strokeColor=none;fillColor=none;html=1;fontSize=31;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="150" y="200" width="861" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-5" value="Broker1" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;shape=mxgraph.citrix.chassis;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="855" y="600" width="88.31" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-6" value="Broker2" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;shape=mxgraph.citrix.chassis;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="855" y="764" width="88.31" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-7" value="Broker2 slave" style="verticalLabelPosition=bottom;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;shape=mxgraph.citrix.chassis;fillColor=#66B2FF;gradientColor=#0066CC;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1005" y="764" width="88.31" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-8" value="name server" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.database;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="851.5" y="330" width="68" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-9" value="proxy" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="320" y="491" width="102.47" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-10" value="proxy" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.router;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="460" y="491" width="102.47" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-13" value="Remoting" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-119" y="489" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-14" value="gRPC（since 5.0）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="30" y="489" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.007;entryY=0.444;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;" parent="1" source="6a7d8f32e03d9370-59" target="6a7d8f32e03d9370-60" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.001;entryY=0.444;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=16;" parent="1" source="6a7d8f32e03d9370-60" target="6a7d8f32e03d9370-61" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-17" value="元数据查询" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=16;" parent="9eP6y44NkABf_WAFRCNE-16" vertex="1" connectable="0">
+          <mxGeometry x="0.2544" y="-2" relative="1" as="geometry">
+            <mxPoint x="18" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9eP6y44NkABf_WAFRCNE-21" value="name server" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.database;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="330" width="68" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
