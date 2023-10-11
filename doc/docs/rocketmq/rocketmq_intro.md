@@ -51,8 +51,82 @@ rocketmq
 
 ### broker启动
 
+RocketMQ的源码启动，需要做些配置，特此记录下。
+
+我采用proxy、broker内嵌的方式启动。
+
+打开**Proxy**目录，通过IDEA设置：
+* workdir=xxx/rocketmq/proxy 
+* env变量设置：ROCKETMQ_HOME=xxx/rocketmq
+
+将distrubution的conf目录复制到RocketMQ_HOME，
+在复制好的conf目录增加test目录，增加如下文件，
+````json title="rmq-proxy-p1.json"
+{
+  "rocketMQClusterName": "DefaultCluster",
+  "namesrvAddr": "127.0.0.1:9876",
+  "grpcServerPort": 8091,
+  "remotingListenPort": 8090
+}
+````
+
+````conf title="broker-c-n1.conf"
+brokerClusterName = DefaultCluster
+brokerName = broker-a
+brokerId = 0
+deleteWhen = 04
+fileReservedTime = 48
+brokerRole = ASYNC_MASTER
+flushDiskType = ASYNC_FLUSH
+
+#enableControllerMode = true
+#fetchNamesrvAddrByAddressServer = true
+#fetchControllerAddrByDnsLookup = true
+#controllerAddr = 127.0.0.1:9870;127.0.0.1:9871;127.0.0.1:9872
+#namesrvAddr = 127.0.0.1:9000;127.0.0.1:9001;127.0.0.1:9002
+namesrvAddr = 127.0.0.1:9876
+
+allAckInSyncStateSet=true
+listenPort=30911
+
+#storePathRootDir=/home/work/xxx
+
+autoCreateTopicEnable=false
+autoCreateSubscriptionGroup=false
+enablePropertyFilter=true
+slaveReadEnable=true
+waitTimeMillsInSendQueue=1000
+````
+
+最后增加启动参数：`-bc xxx/rocketmq/conf/test/broker-c-n1.conf -pc xxx/rocketmq/conf/test/rmq-proxy-p1.json -pm Local`
+
+启动成功：  
+![img.png](img.png)
+
 
 ### namesrv启动
 
+嗯namesrv的启动就简单了：
 
-## 
+IDEA启动页
+* 增加env参数：ROCKETMQ_HOME=xxx/rocketmq
+* workdir设置为xxx/rocketmq/namesrv
+
+启动成功：  
+![img_1.png](img_1.png)
+
+
+## 发消息验证
+
+通过GRPC client sdk发送消息：
+
+````
+send:   
+20:25:16.523 [main] INFO net.teaho.demo.rocketmq.javacli.NormalMsgTest - Send message successfully, message=SendReceiptImpl{messageId=01000EC6786F52C38205382E2C00000000}
+
+receive:  
+20:25:24.429 [RocketmqMessageConsumption-0-17] INFO net.teaho.demo.rocketmq.javacli.NormalMsgTest - Consume body=This is a normal message for Apache RocketMQ, message=MessageViewImpl{messageId=01000EC6786F52C38205382E2C00000000, topic=TopicTest, bornHost=teaho-RedmiBook-Pro-15, bornTimestamp=1697027116394, endpoints=ipv4:10.235.60.170:8091, deliveryAttempt=1, tag=TagA, keys=[yourMessageKey-1c151062f96e], messageGroup=null, deliveryTimestamp=null, properties={}}
+
+
+````
+
