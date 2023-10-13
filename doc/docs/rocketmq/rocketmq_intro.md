@@ -51,7 +51,7 @@ rocketmq
 
 ### broker启动
 
-RocketMQ的源码启动，需要做些配置，特此记录下。
+RocketMQ的源码启动，需要做些配置，特此记录下。（我采用的是单broker、proxy、单namesrv部署测试方式）。
 
 我采用proxy、broker内嵌的方式启动。
 
@@ -126,7 +126,6 @@ send:
 
 receive:  
 20:25:24.429 [RocketmqMessageConsumption-0-17] INFO net.teaho.demo.rocketmq.javacli.NormalMsgTest - Consume body=This is a normal message for Apache RocketMQ, message=MessageViewImpl{messageId=01000EC6786F52C38205382E2C00000000, topic=TopicTest, bornHost=teaho-RedmiBook-Pro-15, bornTimestamp=1697027116394, endpoints=ipv4:10.235.60.170:8091, deliveryAttempt=1, tag=TagA, keys=[yourMessageKey-1c151062f96e], messageGroup=null, deliveryTimestamp=null, properties={}}
-
 
 ````
 
