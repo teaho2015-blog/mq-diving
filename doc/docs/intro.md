@@ -20,7 +20,7 @@ slug: /
 可以通过以下的方式联系我：
 
 * 来Github点一个[![][Badges: Github Stars]][Links: Github Stars]
-* 在Gitbook里 [给我留言](https://mq-diving.teaho.net)
+* 在这里 [给我留言](https://mq-diving.teaho.net)
 * 给这个项目提 [issue][Badges: Github Issues Open]
 * **邮箱**：teaho2015\<at/>gmail.com(replace \<at/> with @)
 * 我的blog: https://blog.teaho.net

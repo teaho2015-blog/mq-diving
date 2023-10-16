@@ -87,7 +87,7 @@ const config = {
         style: 'dark',
         links: [
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} teaho2015@gmail.com, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} teaho2015@gmail.com, Inc. `,
       },
       colorMode: {
         defaultMode: 'dark',
