@@ -51,7 +51,7 @@ rocketmq
 
 ### broker启动
 
-RocketMQ的源码启动，需要做些配置，特此记录下。（我采用的是单broker、proxy、单namesrv部署测试方式）。
+RocketMQ的源码启动，需要做些配置，特此记录下。（我采用的是单broker、proxy、单namesrv、controller部署测试方式）。
 
 我采用proxy、broker内嵌的方式启动。
 

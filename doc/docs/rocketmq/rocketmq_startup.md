@@ -18,7 +18,7 @@ authors:
 
 ```` Java title="NamesrvStartup.java"
         try {
-            parseCommandlineAndConfigFile(args);
+            parseCommandlineAndConfigFile(args); //解析命令行参数和配置文件
             NamesrvController controller = createAndStartNamesrvController();
             return controller;
         } catch (Throwable e) {
@@ -26,6 +26,9 @@ authors:
             System.exit(-1);
         }
 ````
+* `parseCommandlineAndConfigFile` 解析命令行参数和配置文件，支持-h、n、c、p参数，当使用-c配置文件时，会加载namesrvConfig、nettyServerConfig、
+  nettyClientConfig。-p是打印所有配置参数并推出程序。
+* 
 
 
 
